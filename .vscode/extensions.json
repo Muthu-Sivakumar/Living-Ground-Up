@@ -1,0 +1,17 @@
+{
+	"recommendations": [
+		// -- Git Graph --
+		// simplifies git IMO
+		"mhutchie.git-graph",
+
+		// -- Live Server --
+		// deploys local files onto a server. simplifies
+		// development by allowing the use of root-relative paths
+		"ritwickdey.LiveServer",
+
+		// -- Rewrap-revived --
+		// when extension is configured in settings.json, .txt files
+		// auto-wrap at your preset character limit (I set mine to 70 chars)
+		"dnut.rewrap-revived"
+	]
+}

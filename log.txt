@@ -1,0 +1,87 @@
+10/9/26
+Feature Development
+
+  Applied "user-page" to every .html page
+
+
+10/9/26
+Codebase Refactor
+    
+  bundled filed by hierarchy and if they are related, not
+  by the file type. i am doing this because i am devloping
+  on a feature-by-feature basis and inherit css files on top
+  of each other
+
+
+10/1/26
+Feature Development - Wrote the frontend for the user sign-up page
+
+  Wrote the frontend for the user sign-up page
+    user-page.html
+    user-page.css
+  
+  "breakpoints"
+    took a while to figure out the form formatting
+      learned that individual elements can be on grids
+      learned forms have two internal components, not one internal bodyp
+    took a while to figure out correct sizing for the form box
+      learned height/width is either statically set or dynamically set
+      margin and padding for spacing
+      elements are either divs (blocks) or spans (inline)
+        can adjust an element despite being block/inline by changing
+        margins 
+  notes
+    use css in a stacked manner (inheritance-style)
+    css grid is flexible. any element can be a parent container (use
+    divs tho) and any element can be on grid template areas (use spans).
+      set the parent element with a class, set the child with a class
+
+
+9/30/26
+First Practice - npm, .gitignore, buttons, js and events
+
+  Began using the following for the first time
+    npm to install and manage prettier
+    used a script in packages.json
+    .gitignore to ignore the node_modules/ folder 
+    making my first button
+    using and linking js to HTML
+    using events in js 
+
+
+9/29/26
+Learning - learning about root-relative paths and relative
+paths
+
+  Began using root-relative paths in project for consistency across
+  pages
+    saves dev time 
+  
+  will learn server hosting JIT and why relative path works there and
+  not for local hosting
+
+
+9/29/26
+Codebase Refactor - installed prettier using VSCode extension
+
+  used the goto HTML/CSS/JS formatter "prettier" to format files
+  within the project
+
+
+9/28/26
+Feature Development - completed "About This Site" page 
+
+  Following the same format as "TOP-SOLAR-MEDIA-JS"'s "Home" page, I
+  rewrote the content to fit "Living Ground Up"'s site
+
+
+9/28/26
+Codebase Refactor - keep relevant files from
+"TOP-SOLAR-MEDIA-JS"
+
+  I decided to halt development on "TOP-SOLAR-MEDIA-JS" to focus on a
+  smaller niche of content I feel I can commit myself towards learning
+  and creating a website about. 
+
+  I like the format from "TOP-SOLAR-MEDIA-JS" so I will keep the
+  relevant files from that project into this project

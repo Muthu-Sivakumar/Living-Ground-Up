@@ -1,0 +1,109 @@
+* {
+	box-sizing: border-box;
+}
+
+/* the background color for the entire page */
+body {
+	background-color: rgb(200, 166, 122);
+}
+
+/* the peach-sand color box that contains all content below */
+.box-main {
+	background-color: rgb(226, 193, 164);
+
+	width: 75%;
+	height: auto;
+
+	border: 2px solid black;
+	margin: auto;
+	margin-top: 5%;
+}
+
+.contain-user-page {
+	display: flex;
+	justify-content: flex-end;
+}
+.user-page {
+	background-color: grey;
+	font-size: 1rem;
+}
+
+/* the title at the top of the page, "Solar Media" */
+.title-main {
+	font-size: 275%;
+	text-align: center;
+}
+
+/* the brown bar that the navbar sections below fill */
+.navbar {
+	background-color: rgb(163, 97, 73);
+
+	width: 100%;
+	height: 60px;
+
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	margin: auto;
+
+	text-align: center;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: stretch; /*cross axis*/
+}
+/* styling applied to each navbar section */
+.navbar .child {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	flex-wrap: wrap;
+	padding: 0 2%;
+
+	flex: 1 1 0%; /* flex-basis is 0% -> flex-growth takes care*/
+
+	font-size: 1.25vw;
+}
+/* the left-most navbar section */
+.navbar .child.l {
+	border-right: 1px solid black;
+}
+/* the non-left/right navbar sections */
+.navbar .child.m {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+/* the right-most navbar section */
+.navbar .child.r {
+	border-left: 1px solid black;
+}
+/* styling the link on each navbar page */
+.navbar a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* what contains the webpage's main text */
+.box-body {
+	padding: 0 5%;
+}
+
+/* the current page's title at the top of the main text section */
+.title-sub {
+	text-align: center;
+}
+
+/* the underlined text in the main text portion of the page */
+.section-title {
+	display: inline;
+	text-decoration: underline;
+}
+
+/* the bolded, centered "remember this" line in every page */
+.end {
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	text-decoration: underline;
+}
