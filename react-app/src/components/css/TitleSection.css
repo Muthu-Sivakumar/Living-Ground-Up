@@ -1,0 +1,5 @@
+/* the underlined text in the main text portion of the page */
+.TitleSection {
+	display: inline;
+	text-decoration: underline;
+}

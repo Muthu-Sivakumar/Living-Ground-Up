@@ -1,0 +1,7 @@
+/* the bolded, centered "remember this" line in every page */
+.end {
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	text-decoration: underline;
+}

@@ -1,0 +1,20 @@
+* {
+	box-sizing: border-box;
+}
+
+/* the background color for the entire page */
+body {
+	background-color: rgb(200, 166, 122);
+}
+
+/* the peach-sand color box that contains all content below */
+.BoxMain {
+	background-color: rgb(226, 193, 164);
+
+	width: 75%;
+	height: auto;
+
+	border: 2px solid black;
+	margin: auto;
+	margin-top: 5%;
+}

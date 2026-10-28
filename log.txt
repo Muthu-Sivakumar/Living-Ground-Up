@@ -1,3 +1,11 @@
+10/27/26
+Codebase Refactor - Created React HomePage
+
+  - Started transition to React from vanilla webdev SC
+  - Currently HomePage is setup
+  
+  - Need to setup routing on React for Navigation
+
 10/9/26
 Feature Development
 
