@@ -1,11 +1,11 @@
-import './css/BoxMain.css'
-import TitleMain from './TitleMain.jsx'
-import Navbar from './Navbar.jsx'
-import './css/BoxSub.css'
-import TitleSub from './TitleSub.jsx'
-import TitleSection from './TitleSection.jsx'
-import Paragraph from './Paragraph.jsx'
-import End from './End.jsx'
+import '../css/BoxMain.css'
+import TitleMain from '../TitleMain.jsx'
+import Navbar from '../Navbar.jsx'
+import '../css/BoxSub.css'
+import TitleSub from '../TitleSub.jsx'
+import TitleSection from '../TitleSection.jsx'
+import Paragraph from '../Paragraph.jsx'
+import End from '../End.jsx'
 
 
 function HomePage(){
@@ -24,10 +24,10 @@ function HomePage(){
 					negative base state.`;
   const p4 = `I think there is a place for philosophy/religion/life
 					perspective in dealing with life's problems, but I honestly
-					can't say whether they give true peace. I s/1ee them as ways
+					can't say whether they give true peace. I see them as ways
 					to understand the world better, but at the end of the day a
 					problem is still a problem - the only way to 100% get rid of
-					a problem is to fix it.`;
+					a problem is to address it.`;
   const p5 = `That is why I believe safety nets are so important to
 					overall well-being.`;
   const p6 = `A safety net means you are aren't living precariously and
@@ -79,7 +79,7 @@ function HomePage(){
           <Paragraph para={p4} />
           <Paragraph para={p5} />
           <Paragraph para={p6} />
-          <TitleSection title='Genuined Joy' />
+          <TitleSection title='Genuine Joy' />
           <Paragraph para={p7} />
           <Paragraph para={p8} />
           <Paragraph para={p9} />
