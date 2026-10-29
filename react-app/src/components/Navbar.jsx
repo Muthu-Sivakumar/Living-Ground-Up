@@ -11,10 +11,10 @@ function Navbar(){
 					<Link to="/"> About This Site </Link>
 				</span>
 				<span className="child m">
-					<Link to="Peace">Living with Piece of Mind</Link>
+					<Link to="/Peace">Living with Piece of Mind</Link>
 				</span>
 				<span className="child r">
-					<Link to="Joy">Living with Genuine Joy</Link>
+					<Link to="/Joy">Living with Genuine Joy</Link>
 				</span>
 			
 			</div>

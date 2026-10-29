@@ -1,19 +1,20 @@
 import HomePage from "./components/pages/HomePage"
 import PeaceOfMind from "./components/pages/PeaceOfMind"
 import GenuineJoy from "./components/pages/GenuineJoy"
+import { Component } from "react"
 
 const routes = [
   {
     path: "/",
-    element: <HomePage />
+    Component: HomePage
   },
   {
     path: "Peace",
-    element: <PeaceOfMind />
+    Component: PeaceOfMind
   },
   {
     path: "Joy",
-    element: <GenuineJoy />
+    Component: GenuineJoy
   }
 
 ]
