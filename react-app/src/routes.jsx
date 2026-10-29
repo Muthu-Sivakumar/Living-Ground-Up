@@ -9,11 +9,11 @@ const routes = [
     Component: HomePage
   },
   {
-    path: "Peace",
+    path: "/Peace",
     Component: PeaceOfMind
   },
   {
-    path: "Joy",
+    path: "/Joy",
     Component: GenuineJoy
   }
 
