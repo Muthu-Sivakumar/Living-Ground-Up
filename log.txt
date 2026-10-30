@@ -1,5 +1,5 @@
 10/29/26
-Brainstorming - What feature to build next?
+Brainstorming - What feature to build next? 
   - have a spot on app to click and create blogs
   - have a page dedicated to creating blogs
     - these created blogs are then sent to their respective
