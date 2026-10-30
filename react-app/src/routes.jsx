@@ -1,7 +1,6 @@
 import HomePage from "./components/pages/HomePage"
 import PeaceOfMind from "./components/pages/PeaceOfMind"
 import GenuineJoy from "./components/pages/GenuineJoy"
-import { Component } from "react"
 
 const routes = [
   {

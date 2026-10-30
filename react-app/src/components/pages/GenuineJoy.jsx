@@ -16,7 +16,7 @@ function GenuineJoy(){
         <div className="BoxSub">
           <TitleSub title='Genuine Joy' />
           <TitleSection title='What is "Genuine Joy"?' />
-          <em>** Page will contiue development J.I.T.! **</em>
+          <p><em>** Page will contiue development J.I.T.! **</em></p>
         </div>
 
       </div>

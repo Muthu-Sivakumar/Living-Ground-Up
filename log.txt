@@ -1,3 +1,78 @@
+10/29/26
+Brainstorming - What feature to build next?
+  - have a spot on app to click and create blogs
+  - have a page dedicated to creating blogs
+    - these created blogs are then sent to their respective
+    pages automatically
+    - the pages dynamically fetch these blogs from a DB/API
+    and show the user
+  - perhaps i add auth later to make it realistic
+
+  I like idea 2. if i have time (after a week), can add idea 3
+  and launch
+
+10/29/26
+Codebase Cleanup - Deleted vanilla web dev files, kept React files
+
+10/29/26
+Codebase Cleanup - Ensuring consistent path declarations
+  - while using "path:[compon]" is the same as
+  "path:/[compon]", I will use the latter for
+  consistency to the <Link to="/[compon]"> declaration
+
+10/29/26
+Codebase Refactor - Figured out multi-page nav in react
+  - searched through docs + tutorials (declarative react v data react)
+    - noticed the "<Link>" component appended component paths to my URL
+  - read the react-router docs to learn how to use the <Link> component
+    - saw <Link replace />
+    - wasn't sure how to use it
+    - went to STACKOVERFLOW
+      - realized I missed the "/" in all of my paths I used in "<Link>"
+      - this was in the docs, but wasn't explicitly explained
+      - also, TOP introduced <Link> with "[component]"", not
+      "/[component]"
+    - maybe gemini could have helped
+    - but i was able to work on figuring out what each part of my
+    code does now
+      - Router
+        - Routes
+          - Route
+            - path, component
+    - was this useful - for now no. but who knows, i developed something 
+    for the long-term instead of finding the answer immediately. like
+    terrance tao said about math (applicable here), math isn't solved
+    because we found direct solutions. It is knowing the path to get
+    to that solution that is useful. A single one shot path to a
+    solution provides only that solution, but offers nothing else.
+    actually finding the path to that solution yourself offers
+    understanding and allows you to identify patterns to a broad range
+    instead of just that single instance
+    - i feel ok spending 20-30 min debugging and reading docs for this!
+
+10/29/26
+Codebase Refactor - Single-page -> Multi-page React App (2/2)
+  - installed react-router from npm
+  - imported { Link } from react-router
+
+  - HomePage -> Peace (good)
+  - HomePage -> Joy (good)
+
+  - the issue is the URL's stack on top of one another
+  - so it becomes .../Peace/Joy, not .../Peace -> ../Joy
+  - and vice versa
+    - HomePage -> Peace -> Joy (not working)
+    - HomePage -> Joy -> Peace (not working)
+
+  - will research how to make navigation "absolute"
+
+10/29/26
+Codebase Refactor - Single-page -> Multi-page React App (1/1)
+  - last commit I created a functioning single-page react app
+  - this commit I want to expand it to behave as a multi-page
+  react app with client-side routing
+  - this is the 1st iteration, will see feedback
+
 10/27/26
 Codebase Refactor - Created React HomePage
 
@@ -93,3 +168,11 @@ Codebase Refactor - keep relevant files from
 
   I like the format from "TOP-SOLAR-MEDIA-JS" so I will keep the
   relevant files from that project into this project
+
+
+Key
+  Codebase Refactor (appended Debugging)
+  Feature Development (appended Debugging)
+  Codebase Cleanup
+  Brainstorming
+  Learning
