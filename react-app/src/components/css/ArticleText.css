@@ -1,0 +1,16 @@
+.text{
+  text-align: center;
+}
+
+.textBox{
+  display: block;
+  width: 85%;
+  margin: 0 auto;
+
+  background-color: rgb(200, 166, 122);
+  border: 1px solid black;
+}
+
+textarea::placeholder{
+  color: black;
+}

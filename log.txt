@@ -1,3 +1,73 @@
+11/15/26
+Feature Development - Create Article Frontend Proto Done
+  - more practice w css and react
+  - made mistakes and learned, but nothing specific worth writing
+    down. better to just gain more exposure to frontend development
+    just gaining experience
+  - To-do:
+    - create clickable on/off button to create posts
+    - connect to MongoDB and display posts
+
+11/13/26
+Feature Development - Setting Up Article-Button Frontend
+  - positioned at top-left of screen
+    - when clicked, opens a "write article" menu on screen
+      - behaves like an "expansion" page. see TOP for details
+    - menu will close when the top-right "x" is pressed
+  - menu will have the following HTML elements
+    - enter article type (from form drop-down)
+    - enter article date (using calendar)
+    - enter article title (using text input)
+    - enter article content (only text for now)
+    - "submit" button (sends to MongoDB backend)
+
+    1. create menu
+    2. setup button to expand page
+    3. press "x" to close page expansion
+    4. setup form submission to send to mongodb backend
+  
+11/13/26
+Setting up MongoDB Programatically
+  - On-click, open new post on same screen
+  (we did this w links)
+  - new page content connects to MongoDB
+  Compass upon submission
+  - mongodb stores it
+  - backend reads post, sends to frontend
+
+
+11/11/26
+Learning - Getting fundamentals right
+  - promises
+  - async
+  - control structure (try, catch, finally, await)
+
+11/3/26
+Learning - MongoDB
+
+  - learned the mongoDB structure (cluster -> db -> collection -> doc)
+  - learned about localhost apps ([app]://localhost:[port])
+  - learned about control structures (try, catch, finally, await)
+  - learned about MongoDB Compass
+
+10/31/26
+Feature Development - Setting up DB (2/2)
+  - realized I am sending blog data to a DB
+  - MongoDB is more appropriate (noSQL + document-store db)
+
+0/30/26
+Feature Development - Setting up DB
+  - setting up psql DB
+    - decided to use one db, two schemas for website
+
+10/30/26
+Brainstorming - Finalized feature build
+  - have a page dedicated to creating blogs
+    - these created blogs are then sent to their respective
+    pages automatically
+    - the pages dynamically fetch these blogs from a DB/API
+    and show the user
+
 10/29/26
 Brainstorming - What feature to build next? 
   - have a spot on app to click and create blogs

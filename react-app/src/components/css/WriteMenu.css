@@ -1,0 +1,44 @@
+/* the box around the menu */
+.WriteMenu {
+	width: 85%;
+	height: auto;
+
+	border: 3px solid black;
+  margin-left: auto;
+  margin-right: auto;
+	margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 2% 2%;
+}
+
+h2{
+  margin: 0;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.ArticleAttributes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.ArticleAttributes span{
+  display: flex;
+  align-items: center;
+  gap: .15rem;
+}
+
+select{
+  background-color: rgb(205, 165, 113);
+}
+option{
+  background-color: rgb(205, 165, 113);
+}
+input{
+  background-color: rgb(205, 165, 113);
+}
+textarea{
+  background-color: rgb(205, 165, 113);
+}

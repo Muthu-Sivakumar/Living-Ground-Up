@@ -16,6 +16,7 @@
 	flex-wrap: nowrap;
 	align-items: stretch; /*cross axis*/
 }
+
 /* styling applied to each navbar section */
 .navbar .child {
 	display: flex;
@@ -42,6 +43,7 @@
 .navbar .child.r {
 	border-left: 1px solid black;
 }
+
 /* styling the link on each navbar page */
 .navbar a {
 	text-decoration: none;
