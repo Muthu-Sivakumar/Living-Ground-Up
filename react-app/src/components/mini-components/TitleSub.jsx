@@ -1,4 +1,4 @@
-import './css/TitleSub.css'
+import '../css/TitleSub.css'
 
 function TitleSub({ title }){
   return (

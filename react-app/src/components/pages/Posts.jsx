@@ -1,9 +1,9 @@
 import '../css/BoxMain.css'
-import TitleMain from '../TitleMain.jsx'
-import Navbar from '../Navbar.jsx'
+import TitleMain from '../mini-components/TitleMain.jsx'
+import Navbar from '../mini-components/Navbar.jsx'
 import '../css/BoxSub.css'
-import TitleSub from '../TitleSub.jsx'
-import WriteMenu from '../WriteMenu.jsx'
+import TitleSub from '../mini-components/TitleSub.jsx'
+import WriteMenu from '../mini-components/WriteMenu.jsx'
 
 function Posts(){
 
@@ -15,8 +15,8 @@ function Posts(){
         <Navbar />
         <div className="BoxSub">
           <TitleSub title='Posts' />
+          <WriteMenu />
         </div>
-        <WriteMenu />
       </div>
     </>
   )

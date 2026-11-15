@@ -1,4 +1,4 @@
-import './css/BoxSub.css'
+import '../css/BoxSub.css'
 import TitleSub from './TitleSub.jsx'
 import TitleSection from './TitleSection.jsx'
 import Paragraph from './Paragraph.jsx'

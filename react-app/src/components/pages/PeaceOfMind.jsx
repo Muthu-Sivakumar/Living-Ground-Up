@@ -1,10 +1,10 @@
 import '../css/BoxMain.css'
-import TitleMain from '../TitleMain.jsx'
-import Navbar from '../Navbar.jsx'
+import TitleMain from '../mini-components/TitleMain.jsx'
+import Navbar from '../mini-components/Navbar.jsx'
 import '../css/BoxSub.css'
-import TitleSub from '../TitleSub.jsx'
-import TitleSection from '../TitleSection.jsx'
-import Paragraph from '../Paragraph.jsx'
+import TitleSub from '../mini-components/TitleSub.jsx'
+import TitleSection from '../mini-components/TitleSection.jsx'
+import Paragraph from '../mini-components/Paragraph.jsx'
 
 
 function PeaceOfMind(){

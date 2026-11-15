@@ -1,4 +1,13 @@
 11/15/26
+Feature Development - Frontend Proto (2/2)
+  - Polished frontend Proto
+  - will use AI to speed up problems that break mt "frequency"
+
+  - To-Do:
+    - make menu button that opens menu
+    - make menu "x" button that closes menu to show button again
+
+11/15/26
 Feature Development - Create Article Frontend Proto Done
   - more practice w css and react
   - made mistakes and learned, but nothing specific worth writing

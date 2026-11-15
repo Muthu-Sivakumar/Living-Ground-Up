@@ -1,4 +1,4 @@
-import './css/End.css'
+import '../css/End.css'
 
 function End(){
   return (
