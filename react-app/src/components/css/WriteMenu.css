@@ -1,3 +1,9 @@
+/* the button to open the menu */
+.openClick{
+  background-color: rgb(205, 165, 113);
+  cursor: pointer;
+}
+
 /* the box around the menu */
 .WriteMenu {
 	width: 85%;
@@ -11,25 +17,27 @@
   padding: 2% 2%;
 }
 
-h2{
-  display: inline;
-  margin-bottom: 20px;
-  text-decoration: underline;
-}
+/* the grid containing the "title" and "close" button*/
 .topBar{
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   grid-template-rows: auto;
   grid-template-areas: 
-    ". title close";
+  ". title close";
 }
 
+/* the "Create Article" title" */
+h2{
+  display: inline;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
 .title{
   grid-area: title;
   justify-self: center;
   text-align: center;
 }
-
+/* the "X" button */
 .close{
   grid-area: close;
   /* aligns box in grid */
@@ -37,9 +45,12 @@ h2{
   /* aligns content in box */
   justify-content: end;
   font-weight: bold;
+
+  cursor: pointer;
 }
 
-
+/* flex container holding three article attributes. */
+/* as seen below, this is a flex box wrapping three flexboxes */
 .ArticleAttributes{
   display: flex;
   justify-content: center;
@@ -47,13 +58,14 @@ h2{
   flex-wrap: wrap;
   gap: 1rem;
 }
+/* each attribute is a flexbox container vertically stacking content*/
 .ArticleAttributes span{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: .15rem;
 }
-
+/* adding color to each attribute */
 select{
   background-color: rgb(205, 165, 113);
 }

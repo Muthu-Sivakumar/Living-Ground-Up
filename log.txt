@@ -1,4 +1,13 @@
 11/15/26
+Feature Development - Frontend Create Article Menu
+  - created clickable JS+HTML open/close buttons (React DOM + .jsx)
+
+  - To-Do:
+    - do not show menu until openClick
+    - on openClick, hide open button and show menu
+    - on closeClick, hide menu and show open button
+
+11/15/26
 Feature Development - Frontend Proto (2/2)
   - Polished frontend Proto
   - will use AI to speed up problems that break mt "frequency"
