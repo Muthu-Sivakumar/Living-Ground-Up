@@ -3,24 +3,26 @@ import ArticleTime from './ArticleTime.jsx'
 import ArticleTitle from './ArticleTitle.jsx'
 import ArticleText from './ArticleText.jsx'
 import '../css/WriteMenu.css'
-
-function openClick(){
-  window.alert("you opened me!");
-}
-function closeCLick(){
-  window.alert("you closed me!");
-}
+import React, {useState} from 'react';
 
 function WriteMenu(){
+  // tracks if div is open
+  const[isOpen, setIsOpen] = useState(false);
+
   return(
     <>
-      <button class="openClick" onClick={openClick}>
+      
+      {!isOpen &&(
+      <button class="openClick" onClick={() => setIsOpen(true)}>
         Write Article
       </button>
-      <div class="WriteMenu">
+      )}
+
+      {isOpen &&(
+        <div class="WriteMenu">
         <div class="topBar">
           <h2 class="title">Create Article</h2>
-          <span class="close" onClick={closeCLick}>X</span>
+          <span class="close" onClick={() => setIsOpen(false)}>X</span>
         </div>
         <div class='ArticleAttributes'>
           <ArticleType />
@@ -30,6 +32,8 @@ function WriteMenu(){
         <br />
         <ArticleText />
       </div>
+      )}
+
         
     </>
   )

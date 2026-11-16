@@ -5,7 +5,7 @@
 .textBox{
   display: block;
   width: 85%;
-  margin: 0 auto;
+  margin: 3% auto;
 
   background-color: rgb(200, 166, 122);
   border: 1px solid black;

@@ -2,6 +2,7 @@
 .openClick{
   background-color: rgb(205, 165, 113);
   cursor: pointer;
+  margin-bottom: 5%;
 }
 
 /* the box around the menu */

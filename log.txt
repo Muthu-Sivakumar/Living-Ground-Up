@@ -1,5 +1,34 @@
 11/15/26
 Feature Development - Frontend Create Article Menu
+  - used AI to find method to identify how to approach the "open/close" toggle on my write article page
+  - instead of browsing thru articles and wasting time losing flow I
+  kept flow and fouund exatcly what I needed
+
+  - Serendipity is lost in the face of optimization. HOWEVER, enough
+  optimization leads to a "second descent" where what was lost in
+  serendipity is found again.
+  - it is like saying "an LLM is a pattern matching amchine", however
+  if enough patterns are matched, at what point does it not become
+  intelligent?
+  - another way to look at it, if a student only studies for the exam
+  they will not "learn" the content. however, if enough exams are
+  given and they are sufficient in breadth and depth, after a point
+  the student actually "learns" the content
+
+  - all this said, it is paramount I acutally reinforce the learning I
+  found with optimization. Learning is done through frequency
+  (instinct), domain knowledge (memorization + recall), and real-world
+  experience (removes potential "frictions" not found in the
+  theoretical "frequency" and "memorization" factors. It is like
+  knwoing how to place wards in LoL vs actually doing it and realizing
+  player movements, champion pools, and objectives are important too)
+
+  - To-Do:
+    - connect to MongoDB to create and show posts
+
+
+11/15/26
+Feature Development - Frontend Create Article Menu
   - created clickable JS+HTML open/close buttons (React DOM + .jsx)
 
   - To-Do:
