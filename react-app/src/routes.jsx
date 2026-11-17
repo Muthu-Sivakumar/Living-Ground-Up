@@ -1,7 +1,7 @@
 import HomePage from "./components/pages/HomePage"
 import PeaceOfMind from "./components/pages/PeaceOfMind"
 import GenuineJoy from "./components/pages/GenuineJoy"
-import Posts from "./components/pages/Posts"
+import Articles from "./components/pages/Articles"
 
 const routes = [
   {
@@ -17,8 +17,8 @@ const routes = [
     Component: GenuineJoy
   },
   {
-    path: "/Posts",
-    Component: Posts
+    path: "/Articles",
+    Component: Articles
   }
 
 ]

@@ -9,6 +9,9 @@
 
   background-color: rgb(200, 166, 122);
   border: 1px solid black;
+
+  scrollbar-color: rgb(74, 74, 74) rgb(200, 166, 122);
+  scrollbar-width: thin;
 }
 
 textarea::placeholder{

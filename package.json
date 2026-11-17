@@ -13,5 +13,8 @@
 	"type": "commonjs",
 	"devDependencies": {
 		"prettier": "^3.9.9"
+	},
+	"dependencies": {
+		"mongodb": "^7.9.0"
 	}
 }

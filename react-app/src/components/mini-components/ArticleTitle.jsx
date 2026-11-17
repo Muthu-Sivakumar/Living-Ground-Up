@@ -3,7 +3,8 @@ function ArticleTitle(){
     <>
     <span>
       <label htmlFor="text">Title: </label>
-      <textarea placeholder="Enter title here" name="text" rows="1"></textarea>
+      <textarea placeholder="Enter title here"
+                name="articleTitle" rows="1"></textarea>
     </span>
     </>
   )

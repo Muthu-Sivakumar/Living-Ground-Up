@@ -69,13 +69,28 @@ h2{
 /* adding color to each attribute */
 select{
   background-color: rgb(205, 165, 113);
+  border: 1px solid black;
 }
 option{
   background-color: rgb(205, 165, 113);
+  border: 1px solid black;
 }
 input{
   background-color: rgb(205, 165, 113);
+  border: 1px solid black;
 }
 textarea{
   background-color: rgb(205, 165, 113);
+  border: 1px solid black;
+}
+
+.submit{
+  display: block;
+  margin-left: auto;
+  margin-right: 7.5%;
+
+  background-color: rgb(205, 165, 113);
+  border: 1px solid black;
+
+  cursor: pointer;
 }

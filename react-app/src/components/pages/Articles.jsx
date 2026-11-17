@@ -5,7 +5,7 @@ import '../css/BoxSub.css'
 import TitleSub from '../mini-components/TitleSub.jsx'
 import WriteMenu from '../mini-components/WriteMenu.jsx'
 
-function Posts(){
+function Articles(){
 
   return (
     <>
@@ -14,7 +14,7 @@ function Posts(){
         <TitleMain />
         <Navbar />
         <div className="BoxSub">
-          <TitleSub title='Posts' />
+          <TitleSub title='Articles' />
           <WriteMenu />
         </div>
       </div>
@@ -23,4 +23,4 @@ function Posts(){
 
 }
 
-export default Posts
+export default Articles

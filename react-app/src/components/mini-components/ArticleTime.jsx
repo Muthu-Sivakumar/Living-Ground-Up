@@ -3,7 +3,7 @@ function ArticleTime(){
     <>
     <span>
       <label >Time: </label>
-      <input type="datetime-local" id="meeting-time" name="meeting-time"/>
+      <input type="datetime-local" name="articleTime"/>
     </span>
     </>
   )

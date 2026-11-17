@@ -7,8 +7,6 @@ function BoxSub({ title }){
   return(
     <>
       <TitleSub title={title} />
-
-
     </>
   )
 }

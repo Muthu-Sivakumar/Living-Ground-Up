@@ -3,7 +3,7 @@ import '../css/TitleMain.css'
 function TitleMain(){
   return(
     <>
-      <h1 class="TitleMain">Living Ground Up</h1>
+      <h1 className="TitleMain">Living Ground Up</h1>
     </>
   )
 }

@@ -1,3 +1,29 @@
+11/17/26
+Feature Development (Debugging) - Frontend Create Article Menu
+  - used react state hooks (handles common state workflows like on/off
+  components)
+  - added submit button to "Create Article" menu
+  - used react event handlers (combines js logic to html element) to
+  solve issue of web page reloading after every form submit after
+  clicking on the button. used react event handler
+  (onSubmit=createdFunction)
+    - createdFunction is a callback to a function with the line
+      - event.preventDefault() 
+  
+  - To-Do:
+    - ensure there is a route to use the POST method so the response
+    can be read from a backend and not where the vite app is served
+    - once POST has a place to route, test if it responds using a
+    window.alert() call
+    - once that is done, send that response to a MongoDB server
+    - once MongoDB stores article submissions, start reading from the
+    db into the page. upon page refresh, the content should statically
+    show. Can i cache this? do i have to use await for articles to appear
+    on page? Can i wait for the page to load while articles are
+    loading? Will find out at this stage
+      - optional: make the state dynamically update once read from
+      MongoDB
+
 11/15/26
 Feature Development - Frontend Create Article Menu
   - used AI to find method to identify how to approach the "open/close" toggle on my write article page

@@ -16,7 +16,7 @@ function Navbar(){
 					<Link to="/Joy">Living with Genuine Joy</Link>
 				</span>
 				<span className="child r">
-					<Link to="/Posts">Posts</Link>
+					<Link to="/Articles">Articles</Link>
 				</span>
 			
 			</div>
