@@ -1,7 +1,87 @@
+11/24/26
+Learning - Split code into client-side and server-side
+  - My website now has a client-side React frontend and an Express.js
+  server-side backend
+  - The codebase is a monolith, meaning my Express.js serves my React
+  static files on a single port
+    - Lets me write my code together in one codebase
+    - I don't worry about CORS or anything else security/network related
+  - This is just one architecture, I can also try to have a decoupled
+  architecture, one for frontend and one for backend that communicates
+  via CORS
+
+  How it works:
+    - I open URL localhost:5000
+    - browser sends the URL as a GEt request to the backend
+    - localhost:5000 is not a file path, so the browser sends GET /
+    instead
+    - this request is caught by the express.static middleware
+    - since the middleware does not append any additional files, it
+    tries to send the folder containing the static files
+    - since the backend can't send a folder on a file request, it
+    looks for index.html as default
+    - the middleware finds index.html and sends it
+    - the browser reads it and sends requests for the JS and CSS
+    static files
+    - from there, the page is loaded via React's client-side routing
+    - the default page is the Home page on the website
+
+  Page Refreshes:
+    - on page refresh, the browser's GET req for a specific file is
+    not found within the static folders, so it goes to the fallback
+    wildcard middleware that handles any page requests
+    - the same process happens again. the index.html file is sent over
+    so the browser can then call the JS and CSS static files
+    - then the react-router does client-side handling. Since the
+    browser's URL remains the same on page refresh, the client-side
+    routing uses that to match to the webpage routing in the
+    routes.jsx file
+    - that way, the URL is matched to the configured webpage on
+    route.jsx
+    - which means, the page can refresh and reload as expected
+    - that is how this website bypasses the GET res 404 not found
+    issue found on page reloads using React served by Express!
+
+    - even if i ran only the client-side using Vite, page refreshes
+    send a GET /[page] request to Vite to serve that web page. The
+    same process described above happens
+      - browser sends GET /Articles req
+      - Vite isn't configured to handle that and sends its own
+    index.html file by default (this default behavior is coined "SPA
+    fallback")
+      - index.html is read by browser, and main.jsx is read
+      - the browser sends a GET /src/main.jsx req and Vite builds a JS
+      file from the main.jsx file and sends it over
+        - the browser requests for the file held at /src/main.jsx
+        - it only sends a GET req for the file held at that location,
+        it doesn't specify a type fo file it expects to receive
+        - the browser does not care what kind of file is sent back nor
+       does it expect a certain file type on a GET req, as long as it can read it
+        - the server received this req and sends the file in a res.
+        the res informs the browser the file type it is sending in the
+        Content-Type header. This way, the browser knows how to parse it
+        - the browser can't natively read .jsx files, so Vite builds
+        the requests file at /src/main.jsx into a .js file and sends
+        it in a res, noting in the header that it is a .js file
+
+      - all dependencies from here on are sent as requests to Vite,
+      and the above process is repeated until all dependencies are
+      loaded by the browser and the /src/main.js file can run
+
+    - in both cases, when the browser sends a GET req and the serving
+    program (backend Express.js server or Vite) isn't configured to
+    resolve it, it sends a fallback that builds itself to create the
+    impression of a page request (Express.js sends the static files,
+    which load all of the Client-side React-router code that enables
+    page routing and loads the requested page by matching the URL to
+    the routes.jsx file. Vite builds .js files on the fly and
+    eventually automatically runs the same client-side react-router
+    operations described previously)
+
 11/17/26
 Feature Development (Debugging) - Frontend Create Article Menu
   - used react state hooks (handles common state workflows like on/off
-  components)
+  components) to create Open/Close Menu function
   - added submit button to "Create Article" menu
   - used react event handlers (combines js logic to html element) to
   solve issue of web page reloading after every form submit after
