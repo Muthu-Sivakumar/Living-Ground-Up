@@ -1,3 +1,14 @@
+11/25/26
+Feature Development - First client-server connection
+
+  - all the server-side connectiosn are static file code, fallback
+  code for page refreshes, and REST APIs with custom paths. The custom
+  paths are the "link" between client-side and server-side code
+  - Connected client-side form data to server-side via REST API
+  - learned how data is converted along process
+    - form info -> FormData -> .js obj (key-value pairs) -> JSON str
+    - JSON str -> .js obj (key-value pairs)
+
 11/24/26
 Learning - Split code into client-side and server-side
   - My website now has a client-side React frontend and an Express.js

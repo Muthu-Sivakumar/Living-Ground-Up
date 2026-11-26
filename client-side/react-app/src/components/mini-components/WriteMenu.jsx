@@ -13,20 +13,19 @@ async function sendData(formElement){
   const formData = new FormData(formElement);
 
   /* send HTTP req, wait for response */
-  const url = "http://localhost:5000/Articles";
-  const response = await fetch(url, {
+  const path = "/api/sendArticle";
+  const response = await fetch(path, {
     method: "POST",
     headers: {
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify(formData),
+    /* FormData obj -> .js obj (key-value pair) -> JSON str */
+    body: JSON.stringify(Object.fromEntries(formData)),
   });
 
-  /* 
-    let frontend run while
-    response fully loads, then converts to JSON
-  */
-  window.alert(await response.json());
+/* JSON str -> JSON.parse = .js obj (key-value pair) -> call .js attr */
+const data = await response.json()
+window.alert(data.message);
 
 }
 /*
