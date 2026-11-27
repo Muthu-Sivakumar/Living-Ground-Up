@@ -12,20 +12,30 @@ async function sendData(formElement){
   /* FormData natively reads from a <form> element */
   const formData = new FormData(formElement);
 
-  /* send HTTP req, wait for response */
+  /* try HTTP req, wait for response */
   const path = "/api/sendArticle";
-  const response = await fetch(path, {
-    method: "POST",
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    /* FormData obj -> .js obj (key-value pair) -> JSON str */
-    body: JSON.stringify(Object.fromEntries(formData)),
-  });
+  try{
+    const response = await fetch(path, {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      /* FormData obj -> .js obj (key-value pair) -> JSON str */
+      body: JSON.stringify(Object.fromEntries(formData)),
+    });
+    
+    /* if status code 200-299 */
+    if(response.ok){
+      const msg = await response.text();
+      window.alert(msg);
+    }else{ 
+      console.error('Server-side error within req/res: ', response.status);
+    }
 
-/* JSON str -> JSON.parse = .js obj (key-value pair) -> call .js attr */
-const data = await response.json()
-window.alert(data.message);
+  }
+  catch(e){
+    console.error('Network error sending/receiving req/res: ', e);
+  }
 
 }
 /*

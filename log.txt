@@ -1,3 +1,11 @@
+11/26/26
+Feature Development - MongoDB scaffolding to server-side + pre-save
+before WriteArticle.jsx
+  - Added MongoDB scaffolding to server-side to begin database CRUD
+  operations within REST API calls
+  - saving codebase now to update WriteArticle.jsx to hide, not
+  eliminate HTML renders on open/closees to save form data
+  
 11/25/26
 Feature Development - First client-server connection
 
