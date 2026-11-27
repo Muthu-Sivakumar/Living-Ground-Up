@@ -4,6 +4,7 @@ import Navbar from '../mini-components/Navbar.jsx'
 import '../css/BoxSub.css'
 import TitleSub from '../mini-components/TitleSub.jsx'
 import WriteMenu from '../mini-components/WriteMenu.jsx'
+import ShowArticles from '../mini-components/ShowArticles.jsx'
 
 function Articles(){
 
@@ -16,6 +17,7 @@ function Articles(){
         <div className="BoxSub">
           <TitleSub title='Articles' />
           <WriteMenu />
+          <ShowArticles />
         </div>
       </div>
     </>

@@ -1,3 +1,13 @@
+11/27/26
+Feature Experimentation - Deciding on UI when showing an Article
+
+  - will make a new experimental branch to decide on UI
+    - old-school three atrributes in small font on top-left
+  of article with main text below
+    - or more modern article with large main title and two attributes
+    below with text
+    - or something else
+
 11/26/26
 Feature Development - Completed WriteArticle.jsx feature (save form
 inputs)
@@ -424,8 +434,10 @@ Codebase Refactor - keep relevant files from
 
 
 Key
-  Codebase Refactor (appended Debugging)
-  Feature Development (appended Debugging)
+  Codebase Refactor
+  Feature Development
+    Feature Experimentation
+    Feature Completion
   Codebase Cleanup
   Brainstorming
   Learning
