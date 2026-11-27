@@ -47,6 +47,20 @@ app.post("/api/sendArticle", async function (req, res){
   console.log(req.body);
 });
 
+app.get("/api/getArticles", async function(req, res){
+  /* retrieving articles and saving to res */
+  try{
+    const articles = await articles_db.collection('Articles').find({}).toArray();
+    res.json(articles);
+  }
+  /* errors during retrieval */
+  catch(e){
+    console.error(e);
+    res.status(500).send('error retrieving MongoDB documents');
+  }
+  console.log("retrieved articles");
+});
+
 /* 
   fallback - used for page refreshes (rebuilds page, react-router sees
   browser URL and maps to page routing (routes.jsx)

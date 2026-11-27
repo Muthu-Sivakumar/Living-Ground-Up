@@ -1,4 +1,13 @@
 11/27/27
+Feature Development - Setting up Article Render
+
+  - Using useEffect and useState
+    - When page opens, render jsx components first
+    - After, run side-effects (fetching MongoDB articles)
+    - once side-effects are ran, conditionally render the articles
+      - can the article re-render like that after it renders once?
+      - or is there a separate way to get the articles to render?
+11/27/27
 Feature Development - v4, top-left (minus 1 attr) + title
 
   - I like this, it is simple
