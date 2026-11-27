@@ -1,3 +1,10 @@
+11/27/27
+Feature Experimentation - v1, trifecta (UI consistency update)
+
+  - "trifecta" in middle
+  - note: updated WriteArticle.jsx content to add color to
+  writeAricle menu
+
 11/27/26
 Feature Experimentation - v1
 
