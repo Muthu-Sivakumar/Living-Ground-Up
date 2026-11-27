@@ -19,11 +19,11 @@
 }
 
 /* the article's title" */
-.articleBox h2{
+.topBar h2{
   display: inline;
   margin-bottom: 20px;
 }
-.articleBox .title{
+.topBar .title{
   grid-area: title;
   justify-self: center;
   text-align: center;
@@ -39,13 +39,28 @@
   ". left . right .";
 }
 
-.articleBox .left{
+.midBar .left{
   grid-area: left;
   justify-self: center;
   text-align: center;
 }
-.articleBox .right{
+.midBar .right{
   grid-area: right;
   justify-self: center;
   text-align: center;
+}
+
+/* the grid containing the articleText*/
+.articleBox .botBar{
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 6.5% 1fr 6.5%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  ". bot .";
+}
+.botBar .bot{
+  grid-area: bot;
+  justify-self: center;
+  text-align: left;
 }

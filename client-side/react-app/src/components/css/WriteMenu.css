@@ -9,7 +9,9 @@
 
 /* the box around the menu */
 .WriteMenuBox {
-	width: 85%;
+  background-color: rgb(205, 165, 113);
+
+  width: 85%;
 	height: auto;
 
 	border: 3px solid black;
@@ -72,19 +74,19 @@ h2{
 }
 /* adding color to each attribute */
 select{
-  background-color: rgb(205, 165, 113);
+  background-color: rgb(208, 182, 144);
   border: 1px solid black;
 }
 option{
-  background-color: rgb(205, 165, 113);
+  background-color: rgb(208, 182, 144);
   border: 1px solid black;
 }
 input{
-  background-color: rgb(205, 165, 113);
+  background-color: rgb(208, 182, 144);
   border: 1px solid black;
 }
 textarea{
-  background-color: rgb(205, 165, 113);
+  background-color: rgb(208, 182, 144);
   border: 1px solid black;
 }
 

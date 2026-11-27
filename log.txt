@@ -1,4 +1,11 @@
 11/27/26
+Feature Experimentation - v1
+
+  - "trifecta" in middle
+  - note: updated WriteArticle.jsx content to add color to
+  writeAricle menu
+
+11/27/26
 Feature Experimentation - Deciding on UI when showing an Article
 
   - will make a new experimental branch to decide on UI

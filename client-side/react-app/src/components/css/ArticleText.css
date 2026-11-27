@@ -5,9 +5,9 @@
 .textBox{
   display: block;
   width: 85%;
-  margin: 3% auto;
+  margin: 1% auto;
 
-  background-color: rgb(200, 166, 122);
+  background-color: rgb(208, 182, 144);
   border: 1px solid black;
 
   scrollbar-color: rgb(74, 74, 74) rgb(200, 166, 122);
