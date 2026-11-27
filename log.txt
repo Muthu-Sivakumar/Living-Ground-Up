@@ -1,4 +1,16 @@
 11/27/27
+Feature Experimentation - v3, top-left + title
+
+  - honestly my favorite so far, will try more iterations soon
+  - ideas
+    - remove "Mood", see how it looks
+    - adjust spacing more
+    - add "tags" below the title and raise title?
+      - tags are squared backgrounds with attr content
+      - title is raised
+      - tags placed below title
+
+11/27/27
 Feature Experimentation - v2, top-left
 
   - tried top-left

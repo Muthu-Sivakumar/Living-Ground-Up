@@ -10,8 +10,8 @@ function OneArticle({articleType, articleTime, articleTitle, articleText}){
         <div className='topLeft'>
           <span className='attr'>
             <span>
-              <span className='attrFormat'>Title:</span>
-              <span> Hmmm..... My First Article</span>
+              <span className='attrFormat'>Mood:</span>
+              <span> Emboldened</span>
             </span>
             <span>
               <span className='attrFormat'>Type:</span>
@@ -22,6 +22,9 @@ function OneArticle({articleType, articleTime, articleTitle, articleText}){
               <span> 8/23/27</span>
             </span>
           </span>
+        </div>
+        <div className='midBar'>
+          <h3 className='mid'>Hmmm..... My First Article</h3>
         </div>
         <div className='botBar'>
           <span className='bot'>

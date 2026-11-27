@@ -24,14 +24,29 @@
   flex-direction: column;
   grid-area: attr;
 
-  margin-top: 6.5%;
-  margin-bottom: 17.5%;
+  margin-top: 8.5%;
+  margin-bottom: 6.5%;
   justify-self: left;
   text-align: left;
 }
 .topLeft .attr .attrFormat{
   display: inline;
   text-decoration: underline;
+}
+
+/* the grid containing the title*/
+.articleBox .midBar{
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  ". mid .";
+}
+/* the title itself */
+.midBar .mid{
+  grid-area: mid;
+  text-decoration: underline;
+  margin-bottom: 0%;
 }
 
 /* the grid containing the articleText*/
