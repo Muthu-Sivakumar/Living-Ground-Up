@@ -3,10 +3,12 @@
   background-color: rgb(205, 165, 113);
   cursor: pointer;
   margin-bottom: 5%;
+
+  display: var(--show, block);  
 }
 
 /* the box around the menu */
-.WriteMenu {
+.WriteMenuBox {
 	width: 85%;
 	height: auto;
 
@@ -16,6 +18,8 @@
 	margin-top: 5%;
   margin-bottom: 5%;
   padding: 2% 2%;
+
+  display: var(--show, none);
 }
 
 /* the grid containing the "title" and "close" button*/

@@ -1,4 +1,15 @@
 11/26/26
+Feature Development - Completed WriteArticle.jsx feature (save form
+inputs)
+  - used CSS dynamic styling to alter the display property to
+  hide/show React DOM elements, not outright delete them like the
+  previous feature did
+  - there is a smarter way to dynamically change elements by using
+  "style={{'[ele_name]' condition ? execTrue:execFalse}}, but I will
+  stick to my current method to show how to use dynamic CSS styling
+  with JS
+
+11/26/26
 Feature Development - MongoDB scaffolding to server-side + pre-save
 before WriteArticle.jsx
   - Added MongoDB scaffolding to server-side to begin database CRUD

@@ -48,49 +48,41 @@ function overrideSubmit(event){
 }
 
 function WriteMenu(){
-  /* refreshes on false state */
-  const[isOpen, setIsOpen] = useState(false);
+  const [isShow, setIsShow] = useState(true);
 
   return(
     <>
       
-      {!isOpen &&(
-      <button className="openClick" onClick={() => setIsOpen(true)}>
+      <button className="openClick" style={{'--show': isShow? "block":"none"}}
+        onClick={() => setIsShow(false)}>
         Write Article
       </button>
-      )}
 
-      {isOpen &&(
-        <div className="WriteMenu">
+      <div className="WriteMenuBox" style={{'--show': isShow? "none":"block"}}>
 
-          {/* title + "X" */}
-          <div className="topBar">
-            <h2 className="title">Create Article</h2>
-            {/* 
-              the callback pattern instead of function(value) lets the 
-              function get called on event, instead of everytime, event
-              or not (i.e. on every screen render)
-            */}
-            <span className="close" onClick={() => {setIsOpen(false)}}>X</span>
-          </div>
-          
-          {/* input menu */}
-          <form onSubmit={overrideSubmit}>
-            <div className='ArticleAttributes'>
-              <ArticleType />
-              <ArticleTime />
-              <ArticleTitle />
-            </div>
-            <br />
-            <ArticleText />
-            <br />
-            <button className="submit" type='submit'>Submit</button>
-          </form>
-
+        {/* title + "X" */}
+        <div className="topBar">
+          <h2 className="title">Create Article</h2>
+          <span className="close" onClick={() => setIsShow(true)}>
+            X
+          </span>
         </div>
-      )}
-
         
+        {/* input menu */}
+        <form onSubmit={overrideSubmit}>
+          <div className='ArticleAttributes'>
+            <ArticleType />
+            <ArticleTime />
+            <ArticleTitle />
+          </div>
+          <br />
+          <ArticleText />
+          <br />
+          <button className="submit" type='submit'>Submit</button>
+        </form>
+
+      </div>
+
     </>
   )
 }
