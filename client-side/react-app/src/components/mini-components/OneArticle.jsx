@@ -7,12 +7,21 @@ function OneArticle({articleType, articleTime, articleTitle, articleText}){
   return(
     <>
       <div className='articleBox'>
-        <div className='topBar'>
-          <h2 className='title'>articleTitle</h2>
-        </div>
-        <div className='midBar'>
-          <span className='left'>articleType</span>
-          <span className='right'>articleTime</span>
+        <div className='topLeft'>
+          <span className='attr'>
+            <span>
+              <span className='attrFormat'>Title:</span>
+              <span> Hmmm..... My First Article</span>
+            </span>
+            <span>
+              <span className='attrFormat'>Type:</span>
+              <span> Type B</span>
+            </span>
+            <span>
+              <span className='attrFormat'>Time:</span>
+              <span> 8/23/27</span>
+            </span>
+          </span>
         </div>
         <div className='botBar'>
           <span className='bot'>
