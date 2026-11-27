@@ -18,23 +18,23 @@ function Attribution(){
           <TitleSub title='Attributions' />
           
           <TitleSection title="Website's Icon in Browser Tab" />
-          <p>Pixel art potted plant (I altered background opacity to 0%) - Image by magnific
+          <p>Pixel art potted plant (I altered background opacity to 0%) - Image by magnific 
             (
-            <a href="https://www.magnific.com/free-vector/flat-
-            design-flower-pixel-art-illustration_23320730.htm"
-            target='_blank'>
-                link
-            </a>
+              <a href="https://www.magnific.com/free-vector/flat-
+              design-flower-pixel-art-illustration_23320730.htm"
+              target='_blank'>
+                  link
+              </a>
             )
           </p>
           <TitleSection title=" 'About this Site' Page" />
-          <p>TBD(<Link to="/Attribution">link</Link>)</p>
+          <p>TBD (<Link to="/Attribution">link</Link>)</p>
 
           <TitleSection title=" 'Living with Peace of Mind' Page" />
-          <p>TBD(<Link to="/Attribution">link</Link>)</p>
+          <p>TBD (<Link to="/Attribution">link</Link>)</p>
           
           <TitleSection title=" 'Living with Genuine Joy' Page" />
-          <p>TBD(<Link to="/Attribution">link</Link>)</p>
+          <p>TBD (<Link to="/Attribution">link</Link>)</p>
         </div>
 
       </div>

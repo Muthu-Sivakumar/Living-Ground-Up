@@ -46,7 +46,7 @@
 .midBar .mid{
   grid-area: mid;
   text-decoration: underline;
-  margin-bottom: 0%;
+  margin-bottom: 3.5%;
 }
 
 /* the grid containing the articleText*/

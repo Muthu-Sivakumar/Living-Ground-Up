@@ -1,4 +1,14 @@
 11/27/27
+Feature Development - v4, top-left (minus 1 attr) + title
+
+  - I like this, it is simple
+  - the tag idea I don't think is bad, but I don't think it is worth
+  right now in the stage of the project. Better to have something
+  tangible than optimize for something. Will revisit this idea later
+  in the project
+  - This branch is closed!
+
+11/27/27
 Feature Experimentation - v3, top-left + title
 
   - honestly my favorite so far, will try more iterations soon
